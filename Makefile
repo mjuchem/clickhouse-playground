@@ -20,5 +20,5 @@ stop:
 	docker stop clickhouse-server && docker rm clickhouse-server
 
 clean:
-	docker rmi clickhouse/clickhouse-server:latest && docker rmi clickhouse/clickhouse-server:latest
+	docker rmi clickhouse/clickhouse-server:latest
 	rm -rf ./data/*.csv

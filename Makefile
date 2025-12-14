@@ -18,8 +18,8 @@ shell:
 	docker exec -it clickhouse-server sh
 
 stop:
-	docker stop clickhouse-server
+	docker stop clickhouse-server && docker rm clickhouse-server
 
 clean:
-	docker rm clickhouse-server && docker rmi clickhouse/clickhouse-server:latest && docker rmi clickhouse/clickhouse-server:latest
+	docker rmi clickhouse/clickhouse-server:latest && docker rmi clickhouse/clickhouse-server:latest
 	rm -rf ./data/*.tgz ./data/*.csv

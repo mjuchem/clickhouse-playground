@@ -1,5 +1,7 @@
 # clickhouse-playground
 
+Setup clickhouse server with datasets using container.
+
 ## Makefile
 
     $ make download  # Download dataset.

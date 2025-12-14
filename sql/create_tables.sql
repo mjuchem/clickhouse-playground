@@ -1,3 +1,5 @@
+# Source: https://clickhouse.com/docs/getting-started/example-datasets/menus
+
 CREATE TABLE dish
 (
     id UInt32,

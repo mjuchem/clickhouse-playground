@@ -1,3 +1,5 @@
+# Source: https://clickhouse.com/docs/getting-started/example-datasets/menus
+
 SELECT count() FROM menu_item_denorm;
 
 SELECT

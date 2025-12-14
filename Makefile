@@ -1,6 +1,5 @@
 download:
-	cd ./data && wget https://s3.amazonaws.com/menusdata.nypl.org/gzips/2021_08_01_07_01_17_data.tgz
-	cd ./data && tar xvf 2021_08_01_07_01_17_data.tgz
+	curl -sfL https://s3.amazonaws.com/menusdata.nypl.org/gzips/2021_08_01_07_01_17_data.tgz | tar xzvC ./data/
 
 run:
 	docker run -d -p 0.0.0.0:8080:8080 --name clickhouse-server clickhouse/clickhouse-server

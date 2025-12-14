@@ -23,4 +23,4 @@ stop:
 clean:
 	docker rm clickhouse-server
 	docker rmi clickhouse/clickhouse-server:latest
-	rm 2021_08_01_07_01_17_data.tgz
+	rm -rf ./data/*.tgz ./data/*.csv

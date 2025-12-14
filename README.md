@@ -6,7 +6,7 @@
 
     $ make run  # Run clickhouse-server container.
 
-    $ make upload  # Copy datasets into container.
+    $ make upload  # Copy CSVs into container.
 
     $ make client  # Run clickhouse client within the container.
 
